@@ -1,7 +1,7 @@
 <?php
-$servername = "db"; //or you could use hostname (service name if using docker-compose)
+$servername = "db";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "2211500935";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -10,5 +10,4 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-
+?>

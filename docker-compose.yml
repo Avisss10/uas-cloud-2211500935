@@ -12,8 +12,8 @@ services:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: uas_db
+      MYSQL_ROOT_PASSWORD: root  # ← jangan kosong
+      MYSQL_DATABASE: 2211500935
     volumes:
       - mysql-data:/var/lib/mysql
       - ./db:/docker-entrypoint-initdb.d
